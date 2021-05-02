@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet private weak var collectionView: UICollectionView!
+    
     private var searchBar = UISearchBar()
 
     override func viewDidLoad() {
@@ -17,6 +18,20 @@ class ViewController: UIViewController {
         searchBar.delegate = self
         searchBar.heightAnchor.constraint(equalToConstant: 44).isActive = true
         navigationItem.titleView = searchBar
+        
+        collectionView.register(UINib(nibName: String(describing: PexelCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PexelCell.self))
+    }
+}
+
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PexelCell.self), for: indexPath) as! PexelCell
+        cell.configure()
+        return cell
     }
 }
 

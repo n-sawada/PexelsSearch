@@ -18,6 +18,8 @@
 		10CAC3FB263E9032000FBCC9 /* PexelsSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC3FA263E9032000FBCC9 /* PexelsSearchTests.swift */; };
 		10CAC406263E9032000FBCC9 /* PexelsSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC405263E9032000FBCC9 /* PexelsSearchUITests.swift */; };
 		10CAC418263E9B9D000FBCC9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 10CAC417263E9B9D000FBCC9 /* Alamofire */; };
+		10CDC45F263F0A6600CCCD76 /* PexelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDC45D263F0A6600CCCD76 /* PexelCell.swift */; };
+		10CDC460263F0A6600CCCD76 /* PexelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10CDC45E263F0A6600CCCD76 /* PexelCell.xib */; };
 		10FB6821263F017300088F9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB6820263F017300088F9F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		10CAC401263E9032000FBCC9 /* PexelsSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PexelsSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CAC405263E9032000FBCC9 /* PexelsSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsSearchUITests.swift; sourceTree = "<group>"; };
 		10CAC407263E9032000FBCC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CDC45D263F0A6600CCCD76 /* PexelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelCell.swift; sourceTree = "<group>"; };
+		10CDC45E263F0A6600CCCD76 /* PexelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PexelCell.xib; sourceTree = "<group>"; };
 		10FB6820263F017300088F9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,8 @@
 				10FB6820263F017300088F9F /* Constants.swift */,
 				106BF96B263EDDFA00275E11 /* SearchResponse.swift */,
 				106BF970263EE5BF00275E11 /* SearchRepository.swift */,
+				10CDC45D263F0A6600CCCD76 /* PexelCell.swift */,
+				10CDC45E263F0A6600CCCD76 /* PexelCell.xib */,
 				10CAC3E9263E902F000FBCC9 /* Main.storyboard */,
 				10CAC3EC263E9031000FBCC9 /* Assets.xcassets */,
 				10CAC3EE263E9031000FBCC9 /* LaunchScreen.storyboard */,
@@ -248,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10CDC460263F0A6600CCCD76 /* PexelCell.xib in Resources */,
 				10CAC3F0263E9031000FBCC9 /* LaunchScreen.storyboard in Resources */,
 				10CAC3ED263E9031000FBCC9 /* Assets.xcassets in Resources */,
 				10CAC3EB263E902F000FBCC9 /* Main.storyboard in Resources */,
@@ -280,6 +287,7 @@
 				106BF971263EE5BF00275E11 /* SearchRepository.swift in Sources */,
 				10CAC3E4263E902F000FBCC9 /* AppDelegate.swift in Sources */,
 				10CAC3E6263E902F000FBCC9 /* SceneDelegate.swift in Sources */,
+				10CDC45F263F0A6600CCCD76 /* PexelCell.swift in Sources */,
 				10FB6821263F017300088F9F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

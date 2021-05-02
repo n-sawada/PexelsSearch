@@ -14,7 +14,7 @@ import UIKit
  　■Responseモデル作成
  　■通信クラス作成
  ・写真一覧を固定値で表示する
- 　□ViewController作成（CollectionView追加）
+ 　■ViewController作成（CollectionView追加）
  　□Usecase作成
  ・検索機能を作成する
  　■SearchBar追加
