@@ -17,7 +17,7 @@ import UIKit
  　□ViewController作成（CollectionView追加）
  　□Usecase作成
  ・検索機能を作成する
- 　□SearchBar追加
+ 　■SearchBar追加
  　□検索処理を追加
  ・写真一覧を検索ワードから取得する
  　□０件取得時を表示する
