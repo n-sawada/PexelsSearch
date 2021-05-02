@@ -51,6 +51,8 @@ DerivedData/
 ### プロジェクトのワークスペースのデータを格納するXMLファイル
 !*.xcworkspace/contents.xcworkspacedata
 
+xcdebugger
+
 ### 「File > Workspace Settings」で設定できるワークスペースの設定値。
 **/xcshareddata/WorkspaceSettings.xcsettings
 
