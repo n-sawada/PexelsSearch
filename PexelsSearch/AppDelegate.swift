@@ -11,8 +11,8 @@ import UIKit
  ・APIでリクエスト・レスポンス確認できる
  　■PexelsAPI登録する
  　■AlamofireをSPMで導入
- 　□Responseモデル作成
- 　□通信クラス作成
+ 　■Responseモデル作成
+ 　■通信クラス作成
  ・写真一覧を固定値で表示する
  　□ViewController作成（CollectionView追加）
  　□Usecase作成
