@@ -9,8 +9,8 @@ import UIKit
 
 /*
  ・APIでリクエスト・レスポンス確認できる
- 　□AlamofireをSPMで導入
  　■PexelsAPI登録する
+ 　■AlamofireをSPMで導入
  　□Responseモデル作成
  　□通信クラス作成
  ・写真一覧を固定値で表示する
