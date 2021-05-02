@@ -16,6 +16,7 @@
 		10CAC3FB263E9032000FBCC9 /* PexelsSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC3FA263E9032000FBCC9 /* PexelsSearchTests.swift */; };
 		10CAC406263E9032000FBCC9 /* PexelsSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC405263E9032000FBCC9 /* PexelsSearchUITests.swift */; };
 		10CAC418263E9B9D000FBCC9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 10CAC417263E9B9D000FBCC9 /* Alamofire */; };
+		10FB6821263F017300088F9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB6820263F017300088F9F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		10CAC401263E9032000FBCC9 /* PexelsSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PexelsSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CAC405263E9032000FBCC9 /* PexelsSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsSearchUITests.swift; sourceTree = "<group>"; };
 		10CAC407263E9032000FBCC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FB6820263F017300088F9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				10CAC3E3263E902F000FBCC9 /* AppDelegate.swift */,
 				10CAC3E5263E902F000FBCC9 /* SceneDelegate.swift */,
 				10CAC3E7263E902F000FBCC9 /* ViewController.swift */,
+				10FB6820263F017300088F9F /* Constants.swift */,
 				10CAC3E9263E902F000FBCC9 /* Main.storyboard */,
 				10CAC3EC263E9031000FBCC9 /* Assets.xcassets */,
 				10CAC3EE263E9031000FBCC9 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				10CAC3E8263E902F000FBCC9 /* ViewController.swift in Sources */,
 				10CAC3E4263E902F000FBCC9 /* AppDelegate.swift in Sources */,
 				10CAC3E6263E902F000FBCC9 /* SceneDelegate.swift in Sources */,
+				10FB6821263F017300088F9F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
