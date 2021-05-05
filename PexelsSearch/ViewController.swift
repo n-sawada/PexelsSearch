@@ -24,13 +24,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         searchBar.delegate = self
-        searchBar.heightAnchor.constraint(equalToConstant: 44).isActive = true
         navigationItem.titleView = searchBar
         
         collectionView.register(UINib(nibName: String(describing: PexelCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PexelCell.self))
     }
 }
 
+// MARK: UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photos.count
@@ -43,6 +43,7 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
+// MARK: UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -76,11 +77,7 @@ extension ViewController: UISearchBarDelegate {
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        // TODO: API start
-        
         guard searchText == "" else { return }
-
         searchBar.setShowsCancelButton(true, animated: true)
     }
 
@@ -103,6 +100,7 @@ extension ViewController: UISearchBarDelegate {
     }
 }
 
+// MARK: SearchOputput
 extension ViewController : SearchOputput {
     func didFetchPhotos(_ respose: SearchResponse?) {
         guard let response = respose else { return }
