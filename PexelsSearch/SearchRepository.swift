@@ -13,8 +13,8 @@ struct SearchRepository {
         .authorization(Constants.apiKey),
         .accept("application/json")]
     
-    static func photos(_ completion: @escaping(Result<SearchResponse?, NSError>) -> Void) {
-        AF.request("https://api.pexels.com/v1/search?query=nature&per_page=20",
+    static func photos(query: String, completion: @escaping(Result<SearchResponse?, NSError>) -> Void) {
+        AF.request("https://api.pexels.com/v1/search?" + "query=" + query + "&per_page=20",
                    headers: headers
         ).responseData { response in
             switch response.result {

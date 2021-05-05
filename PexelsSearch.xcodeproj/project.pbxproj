@@ -21,6 +21,7 @@
 		10CDC45F263F0A6600CCCD76 /* PexelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDC45D263F0A6600CCCD76 /* PexelCell.swift */; };
 		10CDC460263F0A6600CCCD76 /* PexelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10CDC45E263F0A6600CCCD76 /* PexelCell.xib */; };
 		10CDC466263F109600CCCD76 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 10CDC465263F109600CCCD76 /* AlamofireImage */; };
+		10CDC46B263F136F00CCCD76 /* SearchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDC46A263F136F00CCCD76 /* SearchUsecase.swift */; };
 		10FB6821263F017300088F9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FB6820263F017300088F9F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		10CAC407263E9032000FBCC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10CDC45D263F0A6600CCCD76 /* PexelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelCell.swift; sourceTree = "<group>"; };
 		10CDC45E263F0A6600CCCD76 /* PexelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PexelCell.xib; sourceTree = "<group>"; };
+		10CDC46A263F136F00CCCD76 /* SearchUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsecase.swift; sourceTree = "<group>"; };
 		10FB6820263F017300088F9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				10CAC3E5263E902F000FBCC9 /* SceneDelegate.swift */,
 				10CAC3E7263E902F000FBCC9 /* ViewController.swift */,
 				10FB6820263F017300088F9F /* Constants.swift */,
+				10CDC46A263F136F00CCCD76 /* SearchUsecase.swift */,
 				106BF96B263EDDFA00275E11 /* SearchResponse.swift */,
 				106BF970263EE5BF00275E11 /* SearchRepository.swift */,
 				10CDC45D263F0A6600CCCD76 /* PexelCell.swift */,
@@ -291,6 +294,7 @@
 				106BF971263EE5BF00275E11 /* SearchRepository.swift in Sources */,
 				10CAC3E4263E902F000FBCC9 /* AppDelegate.swift in Sources */,
 				10CAC3E6263E902F000FBCC9 /* SceneDelegate.swift in Sources */,
+				10CDC46B263F136F00CCCD76 /* SearchUsecase.swift in Sources */,
 				10CDC45F263F0A6600CCCD76 /* PexelCell.swift in Sources */,
 				10FB6821263F017300088F9F /* Constants.swift in Sources */,
 			);

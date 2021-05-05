@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class PexelCell: UICollectionViewCell {
 
@@ -17,7 +18,8 @@ class PexelCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func configure() {
-        // TODO: set image and name
+    func configure(photo: Photo) {
+        imageView.af.setImage(withURL: URL(string: photo.src.small)!)
+        photographerName.text = photo.photographer
     }
 }

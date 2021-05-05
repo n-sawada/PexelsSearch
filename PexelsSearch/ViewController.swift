@@ -8,9 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet private weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet private weak var collectionView: UICollectionView!
     
     private var searchBar = UISearchBar()
+    
+    private lazy var usecase: SearchUsecaseProtocol! = {
+        return SearchUsecase(output: self)
+    }()
+    
+    private var photos: [Photo] = []
+    private var response: SearchResponse?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,17 +28,18 @@ class ViewController: UIViewController {
         navigationItem.titleView = searchBar
         
         collectionView.register(UINib(nibName: String(describing: PexelCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PexelCell.self))
+        collectionViewFlowLayout.estimatedItemSize = CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.height / 3)
     }
 }
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PexelCell.self), for: indexPath) as! PexelCell
-        cell.configure()
+        cell.configure(photo: photos[indexPath.row])
         return cell
     }
 }
@@ -42,9 +51,11 @@ extension ViewController: UISearchBarDelegate {
         guard let searchText = self.searchBar.text, !searchText.allSatisfy({ $0.isWhitespace }) else {
             return
         }
-
+        
         searchBar.resignFirstResponder()
         searchBar.setShowsCancelButton(false, animated: true)
+        
+        usecase.fetchPhotos(query: searchText)
     }
 
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -79,3 +90,14 @@ extension ViewController: UISearchBarDelegate {
     }
 }
 
+extension ViewController : SearchOputput {
+    func didFetchPhotos(_ respose: SearchResponse?) {
+        guard let response = respose else { return }
+        self.photos = response.photos
+        collectionView.reloadData()
+    }
+    
+    func didFailFetching(with error: Error) {
+        // TODO:
+    }
+}
