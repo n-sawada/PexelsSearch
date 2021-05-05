@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		106BF96C263EDDFA00275E11 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106BF96B263EDDFA00275E11 /* SearchResponse.swift */; };
 		106BF971263EE5BF00275E11 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106BF970263EE5BF00275E11 /* SearchRepository.swift */; };
+		1083336D2642FF4C0083CDFC /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083336C2642FF4C0083CDFC /* ModalViewController.swift */; };
 		10CAC3E4263E902F000FBCC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC3E3263E902F000FBCC9 /* AppDelegate.swift */; };
 		10CAC3E6263E902F000FBCC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC3E5263E902F000FBCC9 /* SceneDelegate.swift */; };
 		10CAC3E8263E902F000FBCC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CAC3E7263E902F000FBCC9 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		106BF96B263EDDFA00275E11 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		106BF970263EE5BF00275E11 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		1083336C2642FF4C0083CDFC /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		10CAC3E0263E902F000FBCC9 /* PexelsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PexelsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CAC3E3263E902F000FBCC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CAC3E5263E902F000FBCC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				10CAC3E3263E902F000FBCC9 /* AppDelegate.swift */,
 				10CAC3E5263E902F000FBCC9 /* SceneDelegate.swift */,
 				10CAC3E7263E902F000FBCC9 /* ViewController.swift */,
+				1083336C2642FF4C0083CDFC /* ModalViewController.swift */,
 				10FB6820263F017300088F9F /* Constants.swift */,
 				10CDC46A263F136F00CCCD76 /* SearchUsecase.swift */,
 				106BF96B263EDDFA00275E11 /* SearchResponse.swift */,
@@ -296,6 +299,7 @@
 				10CAC3E6263E902F000FBCC9 /* SceneDelegate.swift in Sources */,
 				10CDC46B263F136F00CCCD76 /* SearchUsecase.swift in Sources */,
 				10CDC45F263F0A6600CCCD76 /* PexelCell.swift in Sources */,
+				1083336D2642FF4C0083CDFC /* ModalViewController.swift in Sources */,
 				10FB6821263F017300088F9F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

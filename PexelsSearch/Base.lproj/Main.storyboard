@@ -38,6 +38,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="bfg-5d-ah6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fjv-1o-FM0"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -53,11 +54,48 @@
                     <navigationItem key="navigationItem" id="AmQ-2o-kMy"/>
                     <connections>
                         <outlet property="collectionView" destination="Rub-Df-gpm" id="xpm-KH-DMx"/>
+                        <outlet property="collectionViewFlowLayout" destination="Eol-XK-sco" id="mn3-hH-cO3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="pHB-rD-ze6">
+            <objects>
+                <viewController storyboardIdentifier="ModalViewController" id="ht6-K9-Fbq" customClass="ModalViewController" customModule="PexelsSearch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6U-s0-hDL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J0j-ea-Cpq">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Da7-7B-dde"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J0j-ea-Cpq" firstAttribute="leading" secondItem="Da7-7B-dde" secondAttribute="leading" constant="20" id="6Cu-ad-ynm"/>
+                            <constraint firstItem="J0j-ea-Cpq" firstAttribute="bottom" secondItem="Da7-7B-dde" secondAttribute="bottom" id="8jH-bs-SIw"/>
+                            <constraint firstItem="J0j-ea-Cpq" firstAttribute="top" secondItem="Da7-7B-dde" secondAttribute="top" id="hjP-aG-Vez"/>
+                            <constraint firstItem="Da7-7B-dde" firstAttribute="trailing" secondItem="J0j-ea-Cpq" secondAttribute="trailing" constant="20" id="rZb-OV-ZzD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dAl-46-Tb2">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="PPi-rn-sEg">
+                            <connections>
+                                <action selector="dismiss:" destination="ht6-K9-Fbq" id="2Ao-PH-Rkt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="J0j-ea-Cpq" id="qtH-HW-kak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPp-04-liS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="113.83928571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CaV-aW-pnq">
@@ -76,6 +114,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjK-Yc-ohv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jg6-kw-OEd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q8R-0E-jyK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s2d-8c-Rcm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ht6-K9-Fbq" kind="relationship" relationship="rootViewController" id="50T-QV-sEn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5s-6b-cbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="113.83928571428571"/>
         </scene>
     </scenes>
     <resources>

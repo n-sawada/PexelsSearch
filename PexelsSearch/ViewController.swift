@@ -44,6 +44,21 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
+extension ViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        let modal = ModalViewController.modal
+        modal.configure(photo: photos[indexPath.row])
+        let nav = UINavigationController(rootViewController: modal)
+        nav.modalTransitionStyle = .crossDissolve
+        nav.modalPresentationStyle = .overFullScreen
+
+        present(nav, animated: true)
+    }
+
+}
+
 // MARK: UISearchBarDelegate
 extension ViewController: UISearchBarDelegate {
 
