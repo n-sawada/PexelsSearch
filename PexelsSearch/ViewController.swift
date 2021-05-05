@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         navigationItem.titleView = searchBar
         
         collectionView.register(UINib(nibName: String(describing: PexelCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PexelCell.self))
-        collectionViewFlowLayout.estimatedItemSize = CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.height / 3)
     }
 }
 
@@ -56,7 +55,6 @@ extension ViewController: UICollectionViewDelegate {
 
         present(nav, animated: true)
     }
-
 }
 
 // MARK: UISearchBarDelegate
