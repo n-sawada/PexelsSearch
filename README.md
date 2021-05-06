@@ -1,6 +1,9 @@
 # PexelsSearch
 for testing
 
+## 前提
+* RxSwiftを使用していません
+
 ## 動作環境
 * Xcode = 12.4
 * swift version = 5.0
@@ -8,7 +11,7 @@ for testing
   * Alamofire
   * AlamoFireImage
 
-## 動作確認方法
+## 確認方法
 * `SearchRepository.swift` で設定したAPI keyを設定してご確認ください
 
 ## やらないこと
